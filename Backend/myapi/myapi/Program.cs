@@ -50,15 +50,32 @@ namespace myapi
 			//use my own exception handler to avoid exposing the exception details to the client
 			app.UseMiddleware<MyExceptionHandler>();
 
+
+
 			if (!app.Environment.IsDevelopment())
 			{
 				app.UseHsts();
+				app.UseHttpsRedirection();
 			}
+
+			//for security 
+			app.Use(async (context, next) =>
+			{
+				context.Response?.Headers?.Add("Content-Security-Policy", "default-src 'self'; script-src 'self'; object-src 'none';");
+				context.Response?.Headers?.Add("X-Content-Type-Options", "nosniff");
+				context.Response?.Headers?.Add("X-Frame-Options", "DENY");
+				context.Response?.Headers?.Add("Referrer-Policy", "no-referrer");
+
+				await next();
+			});
 
 			app.UseCors("AllowSpecificOrigins");
 
-
 			app.UseRouting();
+
+			//app.UseAuthentication();
+			//app.UseAuthorization();
+
 			app.MapControllers();
 
 			app.Run();
