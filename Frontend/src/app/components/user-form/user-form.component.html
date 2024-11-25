@@ -5,33 +5,19 @@
 			<mat-form-field appearance="fill" class="full-width">
 				<mat-label>First Name</mat-label>
 				<input matInput formControlName="firstName" required />
-				<mat-error *ngIf="firstNameControl.invalid && (firstNameControl.dirty || firstNameControl.touched)">
-					First Name is required.
+				<mat-error *ngIf="getFirstErrorMessage(firstNameControl) as firstNameErrorMsg">
+					{{firstNameErrorMsg }}
 				</mat-error>
-				<mat-error
-					*ngIf="firstNameControl.hasError('maxlength') && (firstNameControl.dirty || firstNameControl.touched)">
-					First Name cannot exceed {{ firstNameControl.getError('maxlength').requiredLength }} characters.
-				</mat-error>
-				<mat-error
-					*ngIf="firstNameControl.hasError('whitespace') && (firstNameControl.dirty || firstNameControl.touched)">
-					First Name cannot be empty or whitespace.
-				</mat-error>
+
 			</mat-form-field>
 
 			<mat-form-field appearance="fill" class="full-width">
 				<mat-label>Last Name</mat-label>
 				<input matInput formControlName="lastName" required />
-				<mat-error *ngIf="lastNameControl.invalid && (lastNameControl.dirty || lastNameControl.touched)">
-					Last Name is required.
+				<mat-error *ngIf="getFirstErrorMessage(lastNameControl) as lastNameErrorMsg">
+					{{ lastNameErrorMsg }}
 				</mat-error>
-				<mat-error
-					*ngIf="lastNameControl.hasError('maxlength') && (lastNameControl.dirty || lastNameControl.touched)">
-					Last Name cannot exceed {{ lastNameControl.getError('maxlength').requiredLength }} characters.
-				</mat-error>
-				<mat-error
-					*ngIf="lastNameControl.hasError('whitespace') && (lastNameControl.dirty || lastNameControl.touched)">
-					Last Name cannot be empty or whitespace.
-				</mat-error>
+
 			</mat-form-field>
 		</div>
 		<div class="button-container">
