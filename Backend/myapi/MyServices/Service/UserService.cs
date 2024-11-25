@@ -14,6 +14,9 @@ namespace myapi.Service
 
 		public async Task<string> SaveUser(User user)
 		{
+			user.FirstName = user.FirstName?.Trim();
+			user.LastName = user.LastName?.Trim();
+
 			List<User>? users = await _storage.ReadAsync();
 			bool existed = users?.Any(x =>
 	string.Equals(x.LastName, user.LastName, StringComparison.OrdinalIgnoreCase) &&

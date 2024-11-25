@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace myapi.Model
+namespace Handler.Model
 {
 	public class User
 	{

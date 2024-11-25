@@ -1,7 +1,7 @@
 
 using Microsoft.Extensions.Configuration;
-using myapi.Model;
-using myapi.Service;
+using Handler.Model;
+using Handler.Service;
 using Serilog;
 
 namespace myapi

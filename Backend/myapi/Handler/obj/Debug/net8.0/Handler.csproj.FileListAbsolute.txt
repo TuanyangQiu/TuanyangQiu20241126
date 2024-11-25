@@ -1,0 +1,13 @@
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\bin\Debug\net8.0\Handler.deps.json
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\bin\Debug\net8.0\Handler.dll
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\bin\Debug\net8.0\Handler.pdb
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.csproj.AssemblyReference.cache
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.AssemblyInfoInputs.cache
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.AssemblyInfo.cs
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.csproj.CoreCompileInputs.cache
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.sourcelink.json
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.dll
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\refint\Handler.dll
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\Handler.pdb
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\Handler\obj\Debug\net8.0\ref\Handler.dll

@@ -1,0 +1,5 @@
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\MyServices\obj\Debug\net8.0\MyServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\MyServices\obj\Debug\net8.0\MyServices.AssemblyInfoInputs.cache
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\MyServices\obj\Debug\net8.0\MyServices.AssemblyInfo.cs
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\MyServices\obj\Debug\net8.0\MyServices.csproj.CoreCompileInputs.cache
+C:\Lentune\TuanyangQiu20241126\Backend\myapi\MyServices\obj\Debug\net8.0\MyServices.sourcelink.json

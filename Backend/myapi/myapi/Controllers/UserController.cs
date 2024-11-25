@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using myapi.Model;
-using myapi.Service;
+using Handler.Model;
+using Handler.Service;
 
 namespace myapi.Controllers
 {
