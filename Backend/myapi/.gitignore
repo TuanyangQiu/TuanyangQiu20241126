@@ -1,5 +1,5 @@
-/myapi/bin
-/myapi/obj
-/myapi/logs
+**/bin
+**/obj
+**/logs
 myapi.csproj.user
 /.vs
