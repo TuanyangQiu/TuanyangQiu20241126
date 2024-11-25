@@ -1,0 +1,51 @@
+<mat-card>
+	<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+		<h2>User Information Form</h2>
+		<div class="input-container">
+			<mat-form-field appearance="fill" class="full-width">
+				<mat-label>First Name</mat-label>
+				<input matInput formControlName="firstName" required />
+				<mat-error *ngIf="firstNameControl.invalid && (firstNameControl.dirty || firstNameControl.touched)">
+					First Name is required.
+				</mat-error>
+				<mat-error
+					*ngIf="firstNameControl.hasError('maxlength') && (firstNameControl.dirty || firstNameControl.touched)">
+					First Name cannot exceed {{ firstNameControl.getError('maxlength').requiredLength }} characters.
+				</mat-error>
+				<mat-error
+					*ngIf="firstNameControl.hasError('whitespace') && (firstNameControl.dirty || firstNameControl.touched)">
+					First Name cannot be empty or whitespace.
+				</mat-error>
+			</mat-form-field>
+
+			<mat-form-field appearance="fill" class="full-width">
+				<mat-label>Last Name</mat-label>
+				<input matInput formControlName="lastName" required />
+				<mat-error *ngIf="lastNameControl.invalid && (lastNameControl.dirty || lastNameControl.touched)">
+					Last Name is required.
+				</mat-error>
+				<mat-error
+					*ngIf="lastNameControl.hasError('maxlength') && (lastNameControl.dirty || lastNameControl.touched)">
+					Last Name cannot exceed {{ lastNameControl.getError('maxlength').requiredLength }} characters.
+				</mat-error>
+				<mat-error
+					*ngIf="lastNameControl.hasError('whitespace') && (lastNameControl.dirty || lastNameControl.touched)">
+					Last Name cannot be empty or whitespace.
+				</mat-error>
+			</mat-form-field>
+		</div>
+		<div class="button-container">
+			<button mat-raised-button color="primary" type="submit" [disabled]="isSubmitting || userForm.invalid">
+				{{ isSubmitting ? 'Submitting...' : 'Submit' }}
+			</button>
+			<mat-progress-spinner *ngIf="isSubmitting" mode="indeterminate" diameter="24"></mat-progress-spinner>
+		</div>
+	</form>
+
+	<mat-card-content>
+		<div *ngIf="submissionError" class="error-message">
+			<mat-icon color="warn">error</mat-icon>
+			<span>{{ submissionError }}</span>
+		</div>
+	</mat-card-content>
+</mat-card>

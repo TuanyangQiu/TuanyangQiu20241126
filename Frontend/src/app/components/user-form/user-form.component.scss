@@ -1,0 +1,37 @@
+.button-container {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.button-container button {
+	margin-right: 16px;
+}
+
+.success-message,
+.error-message {
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+}
+
+.success-message mat-icon,
+.error-message mat-icon {
+	margin-right: 8px;
+}
+
+.input-container {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 16px;
+}
+
+.full-width {
+	flex: 1;
+}
+
+@media (max-width: 600px) {
+	.input-container {
+		flex-direction: column;
+	}
+}
