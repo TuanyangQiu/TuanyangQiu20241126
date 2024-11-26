@@ -62,5 +62,15 @@ Test result example: docs/xunit-Test-result.png
 
 postman test: docs/CreateNewUserApiCollection.postman_collection.json
 
+### Configuration
+1. The path of user data can be changed in \Backend\myapi\myapi\appsettings.json
+```
+  "StorageOptions": {
+    "User": {
+      "FilePath": "Data/UserInfo.json"
+    },
+  }
+```
+
 ## Security Concern
 Currently, the Https transmission protocol and authentication and authorization mechanisms are not enabled, which may lead to data leakage risks. Please use with caution.
