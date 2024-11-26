@@ -9,8 +9,29 @@
 		{
 			"name": "OK",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"Tuanyang\", \"lastname\":\"Qiu\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5214/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5214",
+					"path": [
+						"api",
+						"user"
+					]
+				}
 			},
 			"response": []
 		}
