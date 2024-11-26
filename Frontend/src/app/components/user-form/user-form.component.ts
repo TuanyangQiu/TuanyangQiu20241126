@@ -47,7 +47,7 @@ export class UserFormComponent {
 				this.cdr.markForCheck();
 
 				this.snackBar.open('User saved successfully!', 'Close', {
-					duration: 3000,
+					duration: 5000,
 				});
 			},
 			error: (err) => {
